@@ -1,0 +1,11 @@
+import com.sam.springdroolspersistence.model.*
+
+rule "Person Female"
+when
+    $p : Person( name == "Christy" )
+then
+System.out.println("Female");
+end
+
+
+
