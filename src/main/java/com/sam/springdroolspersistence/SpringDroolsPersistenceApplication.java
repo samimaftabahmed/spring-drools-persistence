@@ -13,5 +13,4 @@ public class SpringDroolsPersistenceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringDroolsPersistenceApplication.class, args);
 	}
-
 }
