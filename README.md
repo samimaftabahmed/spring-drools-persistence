@@ -6,7 +6,8 @@ The `KieSession` here is persisted to **MySQL**
 
 Exception Stacktrace when changing the value in OPTLOCK
 
-`2021-03-28 15:11:13.415 ERROR 9712 --- [nio-8080-exec-5] o.s.t.s.TransactionSynchronizationUtils  : TransactionSynchronization.beforeCompletion threw exception
+```dtd
+2021-03-28 15:11:13.415 ERROR 9712 --- [nio-8080-exec-5] o.s.t.s.TransactionSynchronizationUtils  : TransactionSynchronization.beforeCompletion threw exception
 
 javax.persistence.OptimisticLockException: Row was updated or deleted by another transaction (or unsaved-value mapping was incorrect) : [org.drools.persistence.info.SessionInfo#1]
 at org.hibernate.internal.ExceptionConverterImpl.wrapStaleStateException(ExceptionConverterImpl.java:226) ~[hibernate-core-5.4.20.Final.jar:5.4.20.Final]
@@ -98,4 +99,5 @@ at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(
 at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40) ~[hibernate-core-5.4.20.Final.jar:5.4.20.Final]
 at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:102) ~[hibernate-core-5.4.20.Final.jar:5.4.20.Final]
 at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1363) ~[hibernate-core-5.4.20.Final.jar:5.4.20.Final]
-... 70 common frames omitted`
+... 70 common frames omitted
+```
