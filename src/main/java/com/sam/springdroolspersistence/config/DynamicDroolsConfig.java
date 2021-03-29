@@ -50,7 +50,6 @@ public class DynamicDroolsConfig {
 
     @Bean
     public KieContainer getKieContainer() {
-        KieFileSystem kieFileSystem = kieServices.newKieFileSystem();
         kieFileSystem.write(ResourceFactory.newClassPathResource("rules/rules.drl"));
         final KieRepository kieRepository = kieServices.getRepository();
         kieRepository.addKieModule(kieRepository::getDefaultReleaseId);
