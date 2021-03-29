@@ -4,7 +4,7 @@ Sample project to demonstrate the integration of persistent aware `KieSession` o
 
 The `KieSession` here is persisted to **MySQL**
 
-Exception Stacktrace when changing the value in OPTLOCK
+Exception Stacktrace after changing the value of OPTLOCK field from a different application
 
 ```dtd
 Female
