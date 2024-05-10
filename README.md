@@ -2,6 +2,10 @@
 
 Sample project to demonstrate the integration of persistent aware `KieSession` of Drools with Spring Boot.
 
+When executing on Java 17 use the following VM option
+```dtd
+--add-opens java.base/java.lang=ALL-UNNAMED
+```
 The `KieSession` here is persisted to **MySQL**
 
 Exception Stacktrace after changing the value of OPTLOCK field from a different application
